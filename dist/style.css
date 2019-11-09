@@ -1,0 +1,79 @@
+
+* {
+    box-sizing: border-box;
+}
+
+#tab-container {
+    display: grid;
+    width: 75vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 45px;
+    padding: 0;
+    margin: 60px auto 0px auto;
+}
+
+.tab {
+    background-color: green;
+    width: 1fr;
+    height: 1fr;
+    border: 1px solid white;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 24px;
+    color: white;
+}
+
+.tab.selected {
+    background-color:black;
+}
+
+#content {
+    width: 75vw;
+    min-height: 75vh;
+    margin: 0 auto;
+    background-color: lightgreen;
+    padding: 50px 25px 50px 25px;
+}
+
+img {
+    width: 50%;
+    margin: 0 25% 20px 25%;
+    border-radius: 25px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h1, h2, h3{
+    font-size: 36px;
+    text-align: center;
+}
+
+p, li {
+    font-size: 24px;
+    margin: 1em 10%;
+}
+
+form {
+    border: 5px black solid;
+    width: 60%;
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    display: block;
+    width: 75%;
+    margin: 20px auto;
+    line-height: 26px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+textarea {
+    resize: none;
+    word-wrap: break-word;
+    padding: 10px;
+}
